@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+#desk_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+    margin: 0 auto;
+
+    width: 80%;
+    height: 100%;
+}
+
+.desk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-height: 100px;  
+}
+
+.desk:nth-of-type(1),
+.desk:nth-of-type(2) {
+    margin: 50px 0 20px 0;
+}
+
+.desk_label {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.items_list {
+    width: 85%;
+   
+    padding: 10px 0px;
+    margin: 10px 0; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.desk_item {
+    flex-grow: 1;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid salmon;
+    background-color: rgb(250, 204, 186);
+    border-radius: 3px;
+    margin: 0 10px 10px 0;
+}
